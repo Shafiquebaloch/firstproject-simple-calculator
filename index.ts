@@ -2,13 +2,13 @@
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
-  { message: "Enter first number", type: "number", name: "firstNumber" },
-  { message: "Enter Second number", type: "number", name: "SecondNumber" },
+  { message: "Enter first number value", type: "number", name: "firstNumber" },
+  { message: "Enter Second number value", type: "number", name: "SecondNumber" },
   {
     message: "Select One of the Operators to perform Operation",
     type: "list",
     name: "operator",
-    choices: ["addition", "Substraction", "Multiply", "Divide",],
+    choices: ["addition", "Substraction", "Multiply", "Divide"],
   },
 ]);
 console.log(answer);
